@@ -50,16 +50,84 @@ public void setColonnes(int nbColonnes){
         if (niveau == 0) {
             matriceCellules[0][3].activerCellule();}
         if (niveau == 1) {
-            matriceCellules[0][3].activerCellule();
-            matriceCellules[2][2].activerCellule();
-            matriceCellules[3][0].activerCellule();
+            matriceCellules[0][0].activerCellule();
+            matriceCellules[1][2].activerCellule();
+            matriceCellules[2][0].activerCellule();
         }
         if (niveau == 2) {
-            matriceCellules[3][9].activerCellule();
-            matriceCellules[2][7].activerCellule();
-            matriceCellules[3][5].activerCellule();
+            matriceCellules[0][2].activerCellule();
+            matriceCellules[2][1].activerCellule();
+            matriceCellules[2][3].activerCellule();
+    }
+        if (niveau == 3) {
+            matriceCellules[1][2].activerCellule();
+            matriceCellules[2][2].activerCellule();
+            matriceCellules[2][4].activerCellule();
+            matriceCellules[4][1].activerCellule();
+            matriceCellules[4][3].activerCellule();
+    }
+        if (niveau == 4) {
+            matriceCellules[0][2].activerCellule();
+            matriceCellules[1][4].activerCellule();
+            matriceCellules[2][1].activerCellule();
+            matriceCellules[2][2].activerCellule();
+            matriceCellules[3][0].activerCellule();
+            matriceCellules[3][4].activerCellule();
+            matriceCellules[4][2].activerCellule();
+    }
+        if (niveau ==5) {
+            matriceCellules[0][2].activerCellule();
+            matriceCellules[0][4].activerCellule();
+            matriceCellules[2][1].activerCellule();
+            matriceCellules[2][3].activerCellule();
+            matriceCellules[2][5].activerCellule();
+            matriceCellules[3][3].activerCellule();
+            matriceCellules[4][1].activerCellule();
+            matriceCellules[4][5].activerCellule();
+            matriceCellules[5][3].activerCellule();
+    }
+        if (niveau == 6) {
+            matriceCellules[0][5].activerCellule();
+            matriceCellules[1][2].activerCellule();
+            matriceCellules[2][2].activerCellule();
+            matriceCellules[2][5].activerCellule();
+            matriceCellules[3][1].activerCellule();
+            matriceCellules[4][3].activerCellule();
+            matriceCellules[4][4].activerCellule();
+            matriceCellules[5][0].activerCellule();
+            matriceCellules[5][2].activerCellule();
+            matriceCellules[6][2].activerCellule();
+    }
+        if (niveau == 7) {
+            matriceCellules[0][2].activerCellule();
+            matriceCellules[1][5].activerCellule();
+            matriceCellules[2][1].activerCellule();
+            matriceCellules[2][3].activerCellule();
+            matriceCellules[3][0].activerCellule();
+            matriceCellules[3][4].activerCellule();
+            matriceCellules[3][6].activerCellule();
+            matriceCellules[4][2].activerCellule();
+            matriceCellules[5][1].activerCellule();
+            matriceCellules[5][3].activerCellule();
             matriceCellules[5][5].activerCellule();
-            matriceCellules[4][7].activerCellule();
+            matriceCellules[6][1].activerCellule();
+    }
+        if (niveau == 8) {
+            matriceCellules[0][4].activerCellule();
+            matriceCellules[0][6].activerCellule();
+            matriceCellules[1][2].activerCellule();
+            matriceCellules[1][8].activerCellule();
+            matriceCellules[2][0].activerCellule();
+            matriceCellules[2][3].activerCellule();
+            matriceCellules[2][5].activerCellule();
+            matriceCellules[3][2].activerCellule();
+            matriceCellules[3][7].activerCellule();
+            matriceCellules[4][4].activerCellule();
+            matriceCellules[4][5].activerCellule();
+            matriceCellules[5][2].activerCellule();
+            matriceCellules[5][8].activerCellule();
+            matriceCellules[6][4].activerCellule();
+            matriceCellules[6][6].activerCellule();
     }
         }
 
