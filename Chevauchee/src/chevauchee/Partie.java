@@ -11,6 +11,8 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.ArrayList;
 import java.util.List;
+
+
 /**
  *
  * @author manon
@@ -103,7 +105,7 @@ List<CaseGraphique> boutons = new ArrayList<>();
     this.pack();
      this.revalidate();
  }
-
+    }
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -119,7 +121,7 @@ List<CaseGraphique> boutons = new ArrayList<>();
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        panneauGrille.setBackground(new java.awt.Color(0, 153, 153));
+        panneauGrille.setBackground(new java.awt.Color(0, 102, 102));
 
         javax.swing.GroupLayout panneauGrilleLayout = new javax.swing.GroupLayout(panneauGrille);
         panneauGrille.setLayout(panneauGrilleLayout);
@@ -132,7 +134,7 @@ List<CaseGraphique> boutons = new ArrayList<>();
             .addGap(0, 100, Short.MAX_VALUE)
         );
 
-        getContentPane().add(panneauGrille, new org.netbeans.lib.awtextra.AbsoluteConstraints(118, 68, -1, -1));
+        getContentPane().add(panneauGrille, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 80, -1, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
