@@ -56,16 +56,39 @@ List<CaseGraphique> boutons = new ArrayList<>();
 }
         
         if (niveau==0){
-            cavalier.deplacement(1, 1);
+            cavalier.deplacement(0, 0);
+            grille.matriceCellules[0][0].cavalierHere=true;
         }
         if (niveau==1){
-            cavalier.deplacement(1, 1);
-            grille.matriceCellules[1][1].cavalierHere=true;
+             cavalier.deplacement(0, 0);
+            grille.matriceCellules[0][0].cavalierHere=true;
         }
         if (niveau==2){
-            cavalier.deplacement(3, 4);
-             grille.matriceCellules[3][4].cavalierHere=true;
+            cavalier.deplacement(0, 0);
+            grille.matriceCellules[0][0].cavalierHere=true;     
         }
+        if (niveau==3){
+             cavalier.deplacement(0, 0);
+            grille.matriceCellules[0][0].cavalierHere=true;}
+        
+        if (niveau==4){
+           cavalier.deplacement(0, 0);
+            grille.matriceCellules[0][0].cavalierHere=true;}
+        if (niveau==5){
+             cavalier.deplacement(0, 0);
+            grille.matriceCellules[0][0].cavalierHere=true;}
+        if (niveau==6){
+            cavalier.deplacement(0, 0);
+            grille.matriceCellules[0][0].cavalierHere=true;}
+        if (niveau==7){
+             cavalier.deplacement(0, 0);
+            grille.matriceCellules[0][0].cavalierHere=true;
+        }
+        if (niveau==8){
+             cavalier.deplacement(0, 0);
+            grille.matriceCellules[0][0].cavalierHere=true;
+        }
+          
         
  for (CaseGraphique bouton:boutons){
      bouton.addActionListener(new ActionListener(){
@@ -93,10 +116,20 @@ List<CaseGraphique> boutons = new ArrayList<>();
          cavalier.deplacement(x, y);
          grille.matriceCellules[x][y].cavalierHere=true;
          
-//         if(niveau==1&&grille.cellulesToutesEteintes()==true ||niveau==2&&grille.cellulesToutesEteintes()||niveau==3&&grille.cellulesToutesEteintes()=true){
-             
+         for (int i=0;i<=8;i++){
+             if(niveau==i&&grille.cellulesToutesEteintes()==true){
+                 FenetreGagnant f=new FenetreGagnant();
+                 f.setVisible(true);
+             }
+         }
+                      
              
          
+         }
+         else{
+           FenetrePerdue f=new FenetrePerdue();
+                 f.setVisible(true);
+               
          }
      }
  });
@@ -119,6 +152,8 @@ List<CaseGraphique> boutons = new ArrayList<>();
         panneauGrille = new javax.swing.JPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setMinimumSize(new java.awt.Dimension(600, 400));
+        setPreferredSize(new java.awt.Dimension(400, 400));
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         panneauGrille.setBackground(new java.awt.Color(0, 102, 102));
@@ -127,14 +162,14 @@ List<CaseGraphique> boutons = new ArrayList<>();
         panneauGrille.setLayout(panneauGrilleLayout);
         panneauGrilleLayout.setHorizontalGroup(
             panneauGrilleLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 100, Short.MAX_VALUE)
+            .addGap(0, 129, Short.MAX_VALUE)
         );
         panneauGrilleLayout.setVerticalGroup(
             panneauGrilleLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 100, Short.MAX_VALUE)
+            .addGap(0, 126, Short.MAX_VALUE)
         );
 
-        getContentPane().add(panneauGrille, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 80, -1, -1));
+        getContentPane().add(panneauGrille, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 80, -1, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents

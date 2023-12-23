@@ -48,9 +48,8 @@ public void setColonnes(int nbColonnes){
             }
         }
         if (niveau == 0) {
-            matriceCellules[0][3].activerCellule();}
+            matriceCellules[1][2].activerCellule();}
         if (niveau == 1) {
-            matriceCellules[0][0].activerCellule();
             matriceCellules[1][2].activerCellule();
             matriceCellules[2][0].activerCellule();
         }

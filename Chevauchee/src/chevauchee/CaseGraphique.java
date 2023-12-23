@@ -40,7 +40,7 @@ public class CaseGraphique extends JButton {
         
     this.setText(CaseLumineuse.toString());
         if (CaseLumineuse.cavalierHere==true){
-            g.setColor(Color.green);
+            g.setColor(Color.white);
         g.fillRect(4, 4, largeur, longeur);
         }}
     
